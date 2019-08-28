@@ -1,0 +1,22 @@
+#include <iostream>
+#include "Fraction.h"
+using namespace std;
+int main()
+{
+	Fraction res;		//default cons
+	Fraction F1(8, 4);	//parametarized cons
+	Fraction F2(2, 2);	//	paramerterized cons
+
+	res= F1 + F2;			//	+ operater overload
+	res= F1 - F2;			//	 -operator overload
+	F1.print();
+	F1.simplify(8,4);
+	Fraction F3;
+	F2 > F1;
+	F2 == F1;
+	F2 / F1;
+	res = F1 * F2;
+	
+	system("PAUSE");
+	return 0;
+}
